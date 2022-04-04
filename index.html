@@ -7,40 +7,60 @@
     <meta name="keywords" content="Stepan, cv, resume">
     <meta name_="description" content="это сайт резюме для Степана Сабина"/>
     <title>Sabin resume</title>
+    <link rel="stylesheet" href="01_selectors.css">
 </head>
 <body>
-    <img src="avatar.jpg" width="200" alt="">
+    <div class="container">
+
+    <div class="info">
+    <img src="avatar.jpg" alt="Степан Сабин" class="avatar">
+
+
+    <div class="info-text">
 <h1>Stepan Sabin</h1> 
 <hr>
-<p>Я хочу стать <strong>Frontend разрабочиком</strong> в крупной компании </p>
-<p>Я люблю программировать, <em>играть в футбол и гулять</em></p>
+<p>Это моя пробная версия сайта резюме <strong>По Frontend разработке</strong> в крупной компании </p>
+<p>Немного о себе:) Я люблю программировать, <em>играть в футбол и гулять</em></p>
 
 <h2>Cписок соц.сетей</h2>
-<a href="https://vk.com/vkid_player" target="blank">В контакте</a>
+<a href="https://vk.com/vkid_player" target="blan k">В контакте</a>
 /
 <a href="https://www.youtube.com" target="blank">Mail</a>
 /
 <a href="https://mail.ru" target="blank">Ютуб</a>
+</div>
+</div>
 
+<div class="card bg-red">
 <h2>Мои хобби</h2>
 
-<ol>
-    <li>Путешествие</li>
-    <li>Футбол</li>
-    <li>Смотреть фильмы</li>
+<ol class="list">
+    <li>Путешествия</li>
+    <li>Играть в футбол</li>
+     <li>Слушать музыку</li>
+
+
     
 </ol>
+</div>
+
+
+
+
+
+ 
+<div class="card bg-green">
 
 <h2>Опыт работы</h2>
 
-<table>
-    <thead>
+<table class="table">
+   <!-- <thead>
         <tr>
             <th><strong>Название</strong></th>
             <th><strong>Должность</strong></th>    
             <th><strong>Год</strong></th>
             <tr>
-    </thead>
+    </thead>-->
    
             <td>VNZM</td>
             <td>Mechanical engenering</td>
@@ -53,23 +73,28 @@
         </tr>
     </tr>
 </table>
-<h2>Связаться со мной!</h2>
+</div>
 
-<form action="">
-<div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной!</h2>
+    <div class="form-row">
+<div class="form-group">
 <label for="name">Ваше имя</label>
 <input type="text" id="name"
-placeholder="введите имя">>
+placeholder="введите имя">
 
 </div>
 
-<div>
+<div class="form-group">
     <label for="Email">Ваш Email</label>
     <input type="Email" id="Email"
     placeholder="введите email">
   
     </div>
-    <div>
+</div>
+
+    <div class="form-group">
         
         <label for="massage">Ваше Сообщение</label>
         <br>
@@ -77,9 +102,10 @@ placeholder="введите имя">>
       ></textarea>
     
         </div>
-        <input type="submit" value="Отправить!"
+        <input class="btn"    type="submit" value="Отправить!"
        >
 </form>
+</div>
 
 
 </body>
